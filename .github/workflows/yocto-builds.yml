@@ -6,6 +6,17 @@ name: Builds
 
 on:
   pull_request:
+    paths-ignore:
+      - 'COPYING.MIT'
+      - 'docs/**'
+      - '.github/**.md'
+      - '.github/workflows/compliance.yml'
+      - '.github/workflows/mirror.yml'
+      - '.github/workflows/docker-images/dco-check/**'
+      - '.gitignore'
+      - 'img/**' 
+      - 'README.md'
+      - '.readthedocs.yaml'
 
 jobs:
   build:
